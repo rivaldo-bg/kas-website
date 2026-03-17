@@ -6,7 +6,7 @@ export default function About() {
 
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <img src="/images/about.jpg" alt="KAS Restaurant" className="rounded-lg w-full object-cover h-80" />
+          <img src="/images/about.png" alt="KAS Restaurant" className="rounded-lg w-full object-cover h-80" />
         </div>
         <div>
           <h2 className="font-heading text-3xl text-white mb-6">Our Story</h2>
