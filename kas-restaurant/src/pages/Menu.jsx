@@ -109,7 +109,7 @@ const categories = [
   {
     name: 'Beef Tripe Hot Pot',
     items: [
-      { name: 'Gop-Chang Jean-Gol', desc: 'Ragoût d Abat', price: '48 000 Ar' },
+      { name: 'Gop-Chang Jean-Gol', desc: "Ragoût d'Abat", price: '48 000 Ar' },
     ],
   },
 ]
