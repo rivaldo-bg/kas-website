@@ -1,27 +1,115 @@
 const categories = [
   {
-    name: 'Starters — Entrées',
+    name: 'Gim-Bab',
     items: [
-      { name: 'Japchae', desc: 'Glass noodles with vegetables', price: '12 000 Ar' },
-      { name: 'Pajeon', desc: 'Korean savory pancake', price: '10 000 Ar' },
-      { name: 'Manduguk', desc: 'Korean dumpling soup', price: '11 000 Ar' },
+      { name: 'Yachet', desc: 'Maki Coréen Légumes', price: '14 500 Ar' },
+      { name: 'Chamchi', desc: 'Maki Coréen Thon', price: '16 500 Ar' },
+      { name: 'Haem', desc: 'Maki Coréen Jambon', price: '17 500 Ar' },
+      { name: 'Cheese', desc: 'Maki Coréen Fromage', price: '17 500 Ar' },
     ],
   },
   {
-    name: 'Main Dishes — Plats',
+    name: 'Ramen',
     items: [
-      { name: 'Bibimbap', desc: 'Mixed rice with vegetables and egg', price: '18 000 Ar' },
-      { name: 'Bulgogi', desc: 'Marinated grilled beef', price: '22 000 Ar' },
-      { name: 'Tteokbokki', desc: 'Spicy rice cakes', price: '15 000 Ar' },
-      { name: 'Samgyeopsal', desc: 'Grilled pork belly', price: '24 000 Ar' },
+      { name: 'Original', desc: 'Ramen Coréen Originaux', price: '14 500 Ar' },
+      { name: 'Chamchi', desc: 'Ramen  Coréen Thon', price: '16 500 Ar' },
+      { name: 'Haem', desc: 'Ramen Coréen Jambon', price: '17 500 Ar' },
+      { name: 'Cheese', desc: 'Ramen Coréen Fromage', price: '17 500 Ar' },
+      { name: 'Emoul', desc: 'Ramen Coréen Fruit de Mer', price: '19 500 Ar' },
     ],
   },
   {
-    name: 'Drinks — Boissons',
+    name: 'Tteok-bok-ki',
     items: [
-      { name: 'Soju', desc: 'Traditional Korean spirit', price: '8 000 Ar' },
-      { name: 'Sikhye', desc: 'Sweet rice punch', price: '5 000 Ar' },
-      { name: 'Boricha', desc: 'Roasted barley tea', price: '4 000 Ar' },
+      { name: 'Tteok-bok-ki', desc: 'Tteokbokki', price: '18 500 Ar' },
+      { name: 'Chijeu Tteok-bok-ki', desc: 'Tteokbokki au fromage', price: '23 500 Ar' },
+    ],
+  },
+  {
+    name: 'Ja-Jang-Myeon',
+    items: [
+      { name: 'Ja-Jang-Myeon', desc: 'Soupes à la sauce soja noire', price: '19 500 Ar' },
+    ],
+  },
+  {
+    name: 'Fried Chicken',
+    items: [
+      { name: 'Fried Dak Tui-Gim 300g', desc: 'Poulet Frit 300g', price: '17 500 Ar' },
+      { name: 'Fried Dak Tui-Gim 500g', desc: 'Poulet Frit 500g', price: '27 500 Ar' },
+    ],
+  },
+  {
+    name: 'Deep-fried and Braised Chicken',
+    items: [
+      { name: 'Dak Gang-Jeong 300g', desc: 'Poulet Frit et Braisé 300g', price: '18 500 Ar' },
+      { name: 'Dak Gang-Jeong 500g', desc: 'Poulet Frit et Braisé 500g', price: '28 500 Ar' },
+    ],
+  },
+  {
+    name: 'Seasoned Fried Chicken',
+    items: [
+      { name: 'Yang-Nyum Dak Tui-Gim 300g', desc: 'Poulet Frit Assaisonné 300g', price: '28 500 Ar' },
+      { name: 'Yang-Nyum Dak Tui-Gim 500g', desc: 'Poulet Frit Assaisonné 500g', price: '38 500 Ar' },
+    ],
+  },
+  {
+    name: 'French Fries',
+    items: [
+      { name: 'French Fries', desc: 'Frites', price: '7 500 Ar' },
+    ],
+  },
+  {
+    name: 'Chicken Wings',
+    items: [
+      { name: '4-pieces Chicken Wings and Fries', desc: 'Ailes de poulet 4 pièces + Frites', price: '9 500 Ar' },
+    ],
+  },
+  {
+    name: 'Grilled Pork Belly',
+    items: [
+      { name: 'Sam-Gyeop-Sal 300g', desc: 'Poitrine de porc grillée 300g', price: '24 000 Ar' },
+    ],
+  },
+  {
+    name: 'Pork Bulgogi',
+    items: [
+      { name: 'Dwaeji-Bulgogi', desc: 'Bulgogi de porc', price: '24 500 Ar' },
+    ],
+  },
+  {
+    name: 'Stir-fried Pork',
+    items: [
+      { name: 'Je-Youk Bok-Eum', desc: 'Porc Sauté epicée', price: '24 500 Ar' },
+    ],
+  },
+  {
+    name: 'Spicy Stir-fried Squid and Pork',
+    items: [
+      { name: 'O-Sam Bul-Go-Gi', desc: 'Calamar et Porc Sautés Epicés', price: '27 500 Ar' },
+    ],
+  },
+  {
+    name: 'Ham Stew',
+    items: [
+      { name: 'Haem budae-jjigae', desc: 'Ham Stew pour 2 personnes', price: '48 000 Ar' },
+    ],
+  },
+  {
+    name: 'Spicy Fish Soup',
+    items: [
+      { name: 'Mae-Un-Tang', desc: 'Soupe de Poisson Épicée', price: '48 000 Ar' },
+    ],
+  },
+  {
+    name: 'Tofu Stew',
+    items: [
+      { name: 'Dubu-Jeon-Gol', desc: 'Ragoût de Tofu', price: '48 000 Ar' },
+    ],
+  },
+  {
+    name: 'Beef Tripe Hot Pot',
+    items: [
+      { name: 'Gop-Chang Jean-Gol', desc: "Ragoût d'Abat", price: '48 000 Ar' },
     ],
   },
 ]
